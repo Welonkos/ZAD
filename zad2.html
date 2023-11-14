@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="dogo.jpeg" alt="" id="pies">
+    <img src="kot.jpeg" alt="" id="kot">
+    <img src="lew.jpeg" alt="" id="lew">
+    <br>
+    <button id="k">kot</button>
+    <button id="p">Pies</button>
+    <button id="l">Lew</button>
+    <script>
+        document.querySelector("#p").addEventListener('click',(e)=>{
+            document.querySelector("#pies").style.display= 'unset';
+            document.querySelector("#kot").style.display= 'none';
+            document.querySelector("#lew").style.display= 'none';
+        })
+        document.querySelector("#k").addEventListener('click',(e)=>{
+            document.querySelector("#pies").style.display= 'none';
+            document.querySelector("#kot").style.display= 'unset';
+            document.querySelector("#lew").style.display= 'none';
+        })
+        document.querySelector("#l").addEventListener('click',(e)=>{
+            document.querySelector("#pies").style.display= 'none';
+            document.querySelector("#kot").style.display= 'none';
+            document.querySelector("#lew").style.display= 'unset';
+        })
+
+
+    </script>
+</body>
+</html>
