@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="marine.jpeg">
+    <button id="p">POKAŻ</button>
+    <button id="u">UKRYJ</button>
+    <script>
+        img = document.querySelector("img");
+
+        document.querySelector("#p").addEventListener('click',(e)=>{
+            img.style.visibility= 'visible';
+        })
+        document.querySelector("#u").addEventListener('click',(e)=>{
+            img.style.visibility= 'hidden';
+        })
+
+        
+    </script>
+</body>
+</html>
